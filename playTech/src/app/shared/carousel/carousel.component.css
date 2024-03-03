@@ -1,0 +1,42 @@
+/* Estilos do carousel */
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: rgb(214, 211, 211);
+  font-weight: bolder;
+  text-decoration-color: gray;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+img {
+  width: 85%;
+}
+
+.carousel-nav.prev {
+  left: 10px;
+}
+
+.carousel-nav.next {
+  right: 10px;
+}

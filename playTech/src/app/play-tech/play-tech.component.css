@@ -13,4 +13,5 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  padding: 10vh 0;
 }
