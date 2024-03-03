@@ -6,6 +6,11 @@ footer {
   color: #fff;
 }
 
+.linea {
+  padding-right: 10px;
+  border-right: #fff solid 3px;
+}
+
 .info {
   display: flex;
   align-items: center;
