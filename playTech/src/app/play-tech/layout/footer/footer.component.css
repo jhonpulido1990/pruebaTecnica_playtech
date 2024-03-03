@@ -1,0 +1,27 @@
+footer {
+  background: #356ac6;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  color: #fff;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.content_image {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.img_redes {
+  width: 70%;
+  height: 70%;
+}
+
+.redes {
+  display: flex;
+}
