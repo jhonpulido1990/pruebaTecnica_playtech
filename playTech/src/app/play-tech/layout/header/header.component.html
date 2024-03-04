@@ -1,9 +1,9 @@
-<nav class="navbar">
+<nav class="navbar large">
   <div class="content_imagen logo">
     <img src="../../../../assets/LogoMenu.png" alt="listo">
   </div>
   <div class="content_anchor">
-    <div class="content" >
+    <div class="content">
       <div class="content_imagen">
         <img class="svg_color" src="../../../../assets/download1_78499.svg" alt="">
       </div>
@@ -23,3 +23,36 @@
     </div>
   </div>
 </nav>
+<nav class="navbar small">
+  <div class="content_imagen logo">
+    <img src="../../../../assets/LogoMenu.png" alt="listo">
+  </div>
+  <div class="menu_borde">
+    <input hidden="" (click)="toggleMenu()" class="check-icon" id="check-icon" name="check-icon" type="checkbox">
+    <label class="icon-menu" for="check-icon">
+      <div class="bar bar--1"></div>
+      <div class="bar bar--2"></div>
+      <div class="bar bar--3"></div>
+    </label>
+  </div>
+</nav>
+<div class="side-menu" *ngIf="isSideMenuVisible">
+  <div class="content">
+    <div class="content_imagen">
+      <img class="svg_color" src="../../../../assets/download1_78499.svg" alt="">
+    </div>
+    <a href="">Descargas</a>
+  </div>
+  <div class="content">
+    <div class="content_imagen">
+      <img src="../../../../assets/banco.svg" alt="">
+    </div>
+    <a href="">Financiero</a>
+  </div>
+  <div class="content">
+    <div class="content_imagen">
+      <img src="../../../../assets/headphones.svg" alt="">
+    </div>
+    <a href="">Soporte</a>
+  </div>
+</div>

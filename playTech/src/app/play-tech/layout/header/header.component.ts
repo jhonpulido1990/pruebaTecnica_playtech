@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  isSideMenuVisible: boolean = false;
 
+  toggleMenu() {
+    this.isSideMenuVisible = !this.isSideMenuVisible;
+  }
 }
