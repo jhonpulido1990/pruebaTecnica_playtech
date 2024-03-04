@@ -30,3 +30,25 @@ footer {
 .redes {
   display: flex;
 }
+
+/* Estilos para telas pequenas (menos de 800px) */
+@media screen and (max-width: 730px) {
+  /* Seus estilos para telas menores que 800px aqui */
+
+  /* Exemplo de como ocultar um elemento */
+  footer {
+    flex-wrap: wrap-reverse;
+  }
+  .info,
+  .redes {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .content_image {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+}

@@ -1,17 +1,17 @@
-<form class="form">
+<form class="form" [formGroup]="formulario" (ngSubmit)="enviarFormulario()">
   <h1>Inicio de sesión</h1>
   <div class="flex-column">
     <label>Usuario* </label>
   </div>
   <div class="inputForm">
-    <input type="text" class="input" placeholder="Ingresa tu usuario">
+    <input type="text" class="input" placeholder="Ingresa tu usuario" formControlName="User" id="User" >
   </div>
 
   <div class="flex-column">
     <label>Clave* </label>
   </div>
   <div class="inputForm">
-    <input type="password" class="input" placeholder="Ingresa tu contraseña">
+    <input type="password" class="input" placeholder="Ingresa tu contraseña" formControlName="Clave" id="Clave" >
     <div class="eye">
       <img src="../../../assets/eye-blocked.svg" alt="">
     </div>
@@ -23,6 +23,6 @@
     </div>
   </div>
   <div class="pos_buton">
-    <button class="button-submit">Validar</button>
+    <button type="submit" class="button-submit">Validar</button>
   </div>
 </form>
