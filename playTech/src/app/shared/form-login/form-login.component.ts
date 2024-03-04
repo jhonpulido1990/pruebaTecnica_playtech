@@ -66,6 +66,7 @@ export class FormLoginComponent {
         console.log('error');
       }
     }
+    this.router.navigate(['/home'])
   }
 
   serachData(): boolean {
