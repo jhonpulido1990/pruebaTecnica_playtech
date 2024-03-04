@@ -4,17 +4,27 @@
     <label>Usuario* </label>
   </div>
   <div class="inputForm">
-    <input type="text" class="input" placeholder="Ingresa tu usuario" formControlName="User" id="User" >
+    <input type="text" class="input" placeholder="Ingresa tu usuario" formControlName="User" id="User">
+  </div>
+  <div *ngIf="f['User'].invalid && (f['User'].dirty || f['User'].touched)" class="error-message">
+    <div *ngIf="f['User'].hasError('required')">Usuario es requerida.</div>
+    <div *ngIf="f['User'].hasError('maxlength')">Usuario debe tener como máximo 20 caracteres.</div>
+    <div *ngIf="f['User'].hasError('pattern')">El usuario no debe contener caracteres especiales.</div>
   </div>
 
   <div class="flex-column">
     <label>Clave* </label>
   </div>
   <div class="inputForm">
-    <input type="password" class="input" placeholder="Ingresa tu contraseña" formControlName="Clave" id="Clave" >
+    <input type="password" class="input" placeholder="Ingresa tu contraseña" formControlName="Clave" id="Clave">
     <div class="eye">
       <img src="../../../assets/eye-blocked.svg" alt="">
     </div>
+  </div>
+  <div *ngIf="f['Clave'].invalid && (f['Clave'].dirty || f['Clave'].touched)" class="error-message">
+    <div *ngIf="f['Clave'].hasError('required')">Clave es requerida.</div>
+    <div *ngIf="f['Clave'].hasError('maxlength')">Clave debe tener como máximo 20 caracteres.</div>
+    <div *ngIf="f['Clave'].hasError('noSpaces')">La Clave no debe contener espacios.</div>
   </div>
 
   <div class="flex-row">
